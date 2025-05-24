@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimes M. Burne - Anaglyph Collection 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="Anaglyphs exhibition style test.css" rel="stylesheet" type="text/css">
+  <link href="Gallery Anaglyphs/Anaglyphs exhibition style test.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Jaimes M. Burne</h1>
+    <p class="subtitle">Anaglyphs Collection 2</p>
+	<p class="subtitle">Photography</p> 
+	  <header> 
+  <nav class="dropdown">
+    <button class="dropbtn">Galleries &#9662;</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+	  <a href="Anaglyphs exhibition strucuture test.html">Anaglyphs Collection 2</a>
+      <a href="Anaglyphs 2 exhibition strucuture.html">Anaglyphs Collection 1</a>
+	  <a href="Gallery Lights of our Eyes Structure.html">Lights of Our Eyes</a>
+      <a href="In Conflict exhibition strucuture.html">In Conflict</a>		
+	  <a href="Gallery Wild Life structure.html">Wildlife Photography</a>
+	  <a href="Gallery Live Event Photography.html">Live Event Photography</a>
+	  <a href="Gallery Street Photography.html">Street Photography</a>
+	  <a href="Gallery Wedding Photography.html">Wedding Photography</a>
+	  <a href="artisit cv webpage structure.html">About Me</a>
+      <a href="contact info webpage strucuture and style.html">Contact Me</a>	
+    </div>
+  </nav>
+</header>
+
+  </header>
+
+  <section class="gallery">
+
+    <div class="image-container">
+      <img src="Arabesque website jpeg.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Arabesque, 2024</p>
+        <p class="description">Graceful Liberation.</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Anaglyphs/Adagio website jpeg.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Adagio, 2024</p>
+        <p class="description">Rhythm of the Suspense.</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Anaglyphs/Salut website jpeg.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Salut, 2024</p>
+        <p class="description">The Pas De Bourrée.</p>
+      </div>
+    </div>  
+	    <div class="image-container">
+      <img src="Gallery Anaglyphs/Pas De Deux website jpeg.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Pas De Deux, 2024</p>
+        <p class="description">Stepping Together.</p>
+      </div>
+    </div>  
+    <!-- Add more images as needed -->
+  </section>
+
+		<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+	
+  <footer>
+    <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
+  </footer>	
+<button id="theme-toggle" class="theme-toggle">🌙 / ☀️</button>
+	<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme on load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+  });
+</script>
+</body>
+</html>

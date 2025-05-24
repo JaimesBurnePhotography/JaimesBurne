@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimes M. Burne - Street Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="In Conflict exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="../Gallery/Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="Gallery Street Photography style.css" rel="stylesheet" type="text/css">
+  <link href="Gallery Street Photography/Gallery Street Photography style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Jaimes M. Burne</h1>
+    <p class="subtitle">Street</p>
+	<p class="subtitle">Photography</p> 
+	  <header> 
+  <nav class="dropdown">
+    <button class="dropbtn">Galleries &#9662;</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+	  <a href="Anaglyphs exhibition strucuture test.html">Anaglyphs Collection 2</a>
+      <a href="Anaglyphs 2 exhibition strucuture.html">Anaglyphs Collection 1</a>
+	  <a href="Gallery Lights of our Eyes Structure.html">Lights of Our Eyes</a>
+      <a href="In Conflict exhibition strucuture.html">In Conflict</a>		
+	  <a href="Gallery Wild Life structure.html">Wildlife Photography</a>
+	  <a href="Gallery Live Event Photography.html">Live Event Photography</a>
+	  <a href="Gallery Street Photography.html">Street Photography</a>
+	  <a href="Gallery Wedding Photography.html">Wedding Photography</a>
+	  <a href="artisit cv webpage structure.html">About Me</a>
+      <a href="contact info webpage strucuture and style.html">Contact Me</a>	
+    </div>
+  </nav>
+</header>
+
+  </header>
+	
+  <section class="gallery">
+
+    <div class="image-container">
+      <img src="Abseil 1.jpg" alt="1">
+      <div class="overlay">
+        <p class="title">Abseil, 2024</p>
+        <p class="description">Evermore taking....</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Abseil 2.jpg" alt="2">
+      <div class="overlay">
+        <p class="title">Abseil 2, 2024</p>
+        <p class="description">... The Plunge</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Stand guard.jpg" alt="3">
+      <div class="overlay">
+        <p class="title">Standing Guard, 2025</p>
+        <p class="description">Forever in Formation.</p>
+      </div>
+    </div>  
+     <div class="image-container">
+      <img src="Gallery Street Photography/Voyeur docks.jpg" alt="1">
+      <div class="overlay">
+        <p class="title">Docks, 2024</p>
+        <p class="description">Voyeurism.</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Foreshortening.jpg" alt="2">
+      <div class="overlay">
+        <p class="title">Foreshortening, 2025</p>
+        <p class="description">Dynamic Architecture.</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Highrise.jpg" alt="3">
+      <div class="overlay">
+        <p class="title">Highrise, 2024</p>
+        <p class="description">Calm of the Night.</p>
+      </div>
+    </div>  
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Looming.jpg" alt="2">
+      <div class="overlay">
+        <p class="title">Looming, 2024</p>
+        <p class="description">The overlooking witness.</p>
+      </div>
+    </div>
+	    <div class="image-container">
+      <img src="Gallery Street Photography/Like a painting.jpg" alt="3">
+      <div class="overlay">
+        <p class="title">Like A Painting, 2025</p>
+        <p class="description">Modern Renaissance.</p>
+      </div>
+    </div>  
+ 
+    <!-- Add more images as needed -->
+  </section>
+
+
+		<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+	
+  <footer>
+    <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
+  </footer>	
+<button id="theme-toggle" class="theme-toggle">🌙 / ☀️</button>
+	<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme on load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+  });
+</script>
+</body>
+</html>
