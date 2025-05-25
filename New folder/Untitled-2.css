@@ -242,3 +242,11 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+
+.overlay a,
+.overlay a:visited,
+.overlay a:hover,
+.overlay a:active {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
