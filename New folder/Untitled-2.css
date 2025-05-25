@@ -303,19 +303,8 @@ input:checked + .slider {
   background-color: #555;
 }
 
-input:checked + .slider:before {
-  content: '🌙';
-  transform: translateX(26px);
-  opacity: 1;
-}
-
 input:checked + .slider {
   background-color: #555;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-  content: '🌙';
 }
 
 input:checked + .slider {

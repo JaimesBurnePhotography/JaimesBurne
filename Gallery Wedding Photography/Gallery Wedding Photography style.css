@@ -50,12 +50,14 @@ header h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
   min-width: 160px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .dropdown-content a {
@@ -240,4 +242,97 @@ footer {
 .dark-mode .overlay {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+
+.overlay a,
+.overlay a:visited,
+.overlay a:hover,
+.overlay a:active {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
+
+/* Toggle Button (No Icons) */
+.switch {
+  position: fixed;
+  bottom: 40px;
+  left: 40px; /* Mirror of #myBtn */
+  width: 60px;
+  height: 34px;
+  z-index: 1000;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+body,
+header,
+footer,
+.dropdown-content {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .dropdown-content a {
+  color: #e0e0e0;
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dropbtn span {
+  margin-left: 4px;
+  font-size: 0.9em;
 }
