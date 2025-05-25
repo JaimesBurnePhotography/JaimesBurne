@@ -4,12 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jaimes M. Burne - Street Photography</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
-  <link href="In Conflict exhibition style.css" rel="stylesheet" type="text/css">
-  <link href="../Gallery/Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
-  <link href="Gallery Street Photography style.css" rel="stylesheet" type="text/css">
   <link href="Gallery Street Photography/Gallery Street Photography style.css" rel="stylesheet" type="text/css">
+	 <script src="New Folder/dark mode button.js"></script>
 </head>
 <body>
   <header>
@@ -100,7 +96,7 @@
   </section>
 
 
-		<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+	<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
 
 <script>
   // Get the button:
@@ -128,7 +124,11 @@
   <footer>
     <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
   </footer>	
-<button id="theme-toggle" class="theme-toggle">🌙 / ☀️</button>
+<label class="switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider round"></span>
+</label>
+
 	<script>
   const toggleButton = document.getElementById('theme-toggle');
   const body = document.body;
@@ -143,6 +143,8 @@
     const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
     localStorage.setItem('theme', mode);
   });
+							
+
 </script>
 </body>
 </html>

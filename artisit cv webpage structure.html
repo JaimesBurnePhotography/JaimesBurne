@@ -8,6 +8,7 @@
   <link href="artsit cv webpage.html.css" rel="stylesheet" type="text/css">
   <link href="artsit cv webpage style.css" rel="stylesheet" type="text/css">
   <link href="cv/artsit cv webpage style.css" rel="stylesheet" type="text/css">
+		 <script src="New Folder/dark mode button.js"></script>
 </head>
 <body>
   <header>
@@ -102,11 +103,40 @@
   }
 </script>
 	
+
+	<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
 	
   <footer>
     <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
   </footer>	
-<button id="theme-toggle" class="theme-toggle">🌙 / ☀️</button>
+<label class="switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider round"></span>
+</label>
+
 	<script>
   const toggleButton = document.getElementById('theme-toggle');
   const body = document.body;
@@ -121,6 +151,8 @@
     const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
     localStorage.setItem('theme', mode);
   });
+							
+
 </script>
 </body>
 </html>
