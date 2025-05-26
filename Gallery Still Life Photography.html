@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimes M. Burne -  Still Life Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="Anaglyphs exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="Anaglyphs exhibition style test.css" rel="stylesheet" type="text/css">
+  <link href="Anaglyphs 2 exhibition style.css" rel="stylesheet" type="text/css">
+  <link href="Gallery Anaglyphs Volume 2/Anaglyphs 2 exhibition style.css" rel="stylesheet" type="text/css">
+	  <script src="New Folder/dark mode button.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Jaimes M. Burne</h1>
+    <p class="subtitle">Still Life</p>
+	<p class="subtitle">Photography</p> 
+	  <header> 
+  <nav class="dropdown">
+    <button class="dropbtn">Galleries &#9662;</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+	  <a href="Anaglyphs exhibition strucuture test.html">Anaglyphs Collection 2</a>
+      <a href="Anaglyphs 2 exhibition strucuture.html">Anaglyphs Collection 1</a>
+	  <a href="Gallery Lights of our Eyes Structure.html">Judgement</a>
+	  <a href="Gallery Lights of our Eyes Structure.html">Lights of Our Eyes</a>
+      <a href="In Conflict exhibition strucuture.html">In Conflict</a>		
+	  <a href="Gallery Wild Life structure.html">Wildlife Photography</a>
+	  <a href="Gallery Live Event Photography.html">Live Event Photography</a>
+	  <a href="Gallery Street Photography.html">Street Photography</a>
+	  <a href="Gallery Wedding Photography.html">Wedding Photography</a>
+      <a href="Gallery Still Life Photography.html">Still Life Photography</a>
+	  <a href="Gallery Product Photography.html">Product Photography</a>
+	  <a href="Gallery Macro Photography.html">Macro Photography</a>
+	  <a href="artisit cv webpage structure.html">About Me</a>
+      <a href="contact info webpage strucuture and style.html">Contact Me</a>	
+    </div>
+  </nav>
+</header>
+
+  </header>
+
+  <section class="gallery">
+
+    <div class="image-container">
+      <img src="Gallery Still Life/1 - still life.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Statue 1, 2020</p>
+        <p class="description">Cherub</p>
+      </div>
+    </div>
+	      <div class="image-container">
+      <img src="Gallery Still Life/2 - still life.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Statue 2, 2020</p>
+        <p class="description">Mother</p>
+      </div>
+    </div>
+	      <div class="image-container">
+      <img src="Gallery Still Life/3 - still life.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Statue, 2020</p>
+        <p class="description">The Wather in the Night</p>
+      </div>
+    </div>
+	      <div class="image-container">
+      <img src="Gallery Still Life/5 - still life - architecture.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Monument, 2020</p>
+        <p class="description">Of Our Heroes</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="Gallery Still Life/13 - still life.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Aging Tank, 2020</p>
+        <p class="description">Tanker's Battle Stations</p>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="Gallery Still Life/14 - close up.jpg" alt="Arabesque">
+      <div class="overlay">
+        <p class="title">Aging Tank, 2020</p>
+        <p class="description">Tanker's Cracked Leather Boxing Gloves</p>
+      </div>
+    </div>
+
+    <!-- Add more images as needed -->
+  </section>
+
+	<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+	
+  <footer>
+    <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
+  </footer>	
+<label class="switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider round"></span>
+</label>
+
+	<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme on load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+  });
+							
+
+</script>
+</body>
+</html>
