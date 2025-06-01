@@ -335,3 +335,34 @@ footer,
   margin-left: 4px;
   font-size: 0.9em;
 }
+
+#page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.5s ease; /* Fade duration: 500ms */
+}
+
+body.fade-in #page-transition {
+  opacity: 0;
+}
+
+body.fade-out #page-transition {
+  opacity: 1;
+}
+
+.subtitle-link a {
+  color: #666; /* matches .subtitle color */
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.dark-mode .subtitle-link a {
+  color: #e0e0e0; /* light grey/white for dark mode */
+}
