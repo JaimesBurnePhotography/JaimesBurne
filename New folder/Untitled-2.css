@@ -358,11 +358,17 @@ body.fade-out #page-transition {
 }
 
 .subtitle-link a {
-  color: #666; /* matches .subtitle color */
-  text-decoration: none;
-  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #666;               /* Matches the subtitle */
+  text-decoration: none;     /* Removes underline */
+  font-weight: normal;       /* No bold */
+  font-size: 1.2rem;         /* Same size as .subtitle */
+}
+
+.subtitle-link a:hover {
+  color: #444;               /* Optional: subtle hover effect */
 }
 
 .dark-mode .subtitle-link a {
-  color: #e0e0e0; /* light grey/white for dark mode */
+  color: #e0e0e0;            /* Light for dark mode */
 }
