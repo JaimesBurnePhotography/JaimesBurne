@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaimes M. Burne - CV</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="artsit cv webpage.html.css" rel="stylesheet" type="text/css">
+  <link href="artsit cv webpage style.css" rel="stylesheet" type="text/css">
+  <link href="cv/artsit cv webpage style.css" rel="stylesheet" type="text/css">
+		 <script src="New Folder/dark mode button.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Jaimes M. Burne</h1>
+    <p>Photographer | Videographer | Illustrator</p>
+  <nav class="dropdown">
+    <button class="dropbtn">Galleries &#9662;</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+	  <a href="Anaglyph.Collections.html">Anaglyph Collections</a>	
+	  <a href="Gallery.Wild.Life.html">Wildlife Photography Portfolio</a>
+	  <a href="Gallery.Live.Event.Photography.html">Live Event Photography Portfolio</a>
+      <a href="Various.Collected.Portfolios.html">Various Collected Portfolios</a>
+      <a href="Other.Collected.Projects.html">Other Projects</a>
+      <a href="contact.info.html">Contact Me</a>
+  </nav> 
+  </header>
+
+  <section class="cv">
+	    <div class="section">
+      <h2>About Me</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>2025: Bachelor of Photography Honours, De Montfort University University</li>
+        <li>2021: Certificate of Higher Education Photography and Video Degree, De Montfort University</li>
+        <li>2019: Cambridge Technical Subsidiary Diploma in Art and Design, Loughborough College of Arts</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Selected Exhibitions</h2>
+      <ul>
+		<li>2025: DMU Vijay Patel Building, (DMU Finals Graduate Award Show 2025), England, Leicester</li>
+		<li>2025: The Leicester Gallery, Leicester Society of Artists, (Student Competition Exhibition), England, Leicester</li>
+        <li>2024: LCB Depot, England, Leicester</li>
+        <li>2024: LCB Depot (Culutral Exchange Event), England, Leicester</li>
+        <li>2024: The Leicester Gallery, (RAW) England, Leicester</li>
+		<li>2024: De Montfort University Atrium, (Untitled Collection of Anaglyphs 2), England, Leicester</li>
+		<li>2021: De Montfort University Atrium, (Untitled Collection of Anagylphs 1), England, Leicester</li> 
+        <li>2019: Loughborough College of Arts (Analogue), England, Loughborough</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Awards</h2>
+      <ul>
+        <li>2024/2025: Leicester Society of Artists, Student Competition, 2nd place award</li>
+      </ul>
+    </div>
+	  
+    <div class="section">
+      <h2>Publications</h2>
+      <ul>
+        <li>2023/2024: Yo-Yo Zine, England, York</li>
+		<li>2018/2019: Loughborough College of Arts, RAW, England, Loughborough</li>
+      </ul>
+    </div>
+  </section>
+
+		<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+
+	<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+	
+  <footer>
+    <p>© 2025 Jaimes M. Burne, All rights reserved.</p>
+  </footer>	
+<label class="switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider round"></span>
+</label>
+
+	<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme on load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+  });
+							
+
+</script>
+</body>
+</html>

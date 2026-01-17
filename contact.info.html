@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Information</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    * {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #000;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contact-info {
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .contact-info p {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 10px;
+    }
+
+    .contact-info a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #666;
+    }
+  </style>
+  <link href="Gallery Anaglyphs/Anaglyphs exhibition style test.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	  <header>
+      <h1>Jaimes M. Burne</h1>
+	<p class="subtitle">Photography</p> 
+	  <header> 
+  <nav class="dropdown">
+    <button class="dropbtn">Galleries &#9662;</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+	  <a href="Anaglyph.Collections.html">Anaglyph Collections</a>	
+	  <a href="Gallery.Wild.Life.html">Wildlife Photography Portfolio</a>
+	  <a href="Gallery.Live.Event.Photography.html">Live Event Photography Portfolio</a>
+      <a href="Various.Collected.Portfolios.html">Various Collected Portfolios</a>
+      <a href="Other.Collected.Projects.html">Other Projects</a>
+	  <a href="Artist.CV.html">About Me</a>
+    </div>
+  </nav>
+</header>
+
+  <header>
+    <h1>Contact Information</h1>
+    <p class="subtitle">Reach out to me via the following platforms</p>
+  </header>
+
+		<button onclick="topFunction()" id="myBtn" class="hover-underline-animation-side">BACK TO TOP</button>
+
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 180) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+	
+<label class="switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="slider round"></span>
+</label>
+
+	<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Apply saved theme on load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+  });
+	
+
+
+</script>
+		  
+  <div class="container">
+    <div class="contact-info">
+      <p>If you'd like to contact me for business inquiries or otherwise, you are very welcome to do so through:</p>
+      <ul>
+        <li>Email: <a href="mailto:Jaimes.burne.business@gmail.com">Jaimes.Burne.Business@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/burnevisionpictures" target="_blank">@BurneVisionPictures</a></li>
+    	<a href="https://wa.me/447410899156" target="_blank">Message me on WhatsApp</a>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Jaimes M. Burne, All rights reserved.
+  </footer>
+
+</body>
+</html>
